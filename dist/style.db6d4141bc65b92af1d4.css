@@ -1,0 +1,234 @@
+                      /* HEADER CSS START HERE  */
+header {
+    background-color: white;
+    border-bottom: solid 1px #bfb5b5c4;
+    height: 52px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    justify-content: center;
+    text-align: center;
+    width: 93%;
+    margin-left: 14px;
+  }
+  header .icon {
+    margin-top: 12px;
+    font-size: 22px;
+    letter-spacing: 20px;
+  }
+  header .icon:hover {
+    cursor: pointer;
+  }
+  section {
+    padding-top: 60px;
+  }
+  header .nav-input {
+    text-align: center;
+    height: 27px;
+    outline: none;
+    border: solid 1px #bfb5b5c4;
+    font-weight: 300;
+    width: 215px;
+    border-radius: 3px;
+    min-width: 125px;
+  }
+  .logo-div img {
+    width: 95px;
+  }
+  .nav-input {
+    margin-top: 11px;
+    background-color: #d4d4d429;
+  }
+  .input-div {
+    position: relative;
+    width: 100%;
+  }
+  .search-icon-div {
+    position: absolute;
+    top: 19px;
+    left: 74px;
+    font-size: 10px;
+    opacity: 0.5;
+  }
+  .profile-img {
+    width: 28px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: -7px;
+    vertical-align: middle;
+  }
+  /*============= Navbarmedia query */
+
+@media screen and (max-width: 960px) {
+    ul {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .input-div {
+      display: none;
+    }
+    header .icon {
+      font-size: 18px;
+      letter-spacing: 15px;
+    }
+  }
+
+                        /* HEADER CSS CLOSE HERE  */
+
+
+
+/* =================================================== login form start Here */
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .loginImgDiv {
+    flex-basis: 50%;    
+  }
+  .loginImg {
+    width: 65%;
+    margin-left: auto;
+  }
+  .formDiv {
+    flex-basis: 25%;
+  }
+  @media(max-width:698px){
+    .loginImg {
+      width: 50%;
+      margin:auto;
+    }
+    .formDiv {
+      flex-basis: 80%;
+    }
+  }
+  .uperDiv {
+    
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-left: 30px;
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .formContainer .btn {
+    width: 100%;
+    padding: 10px 108px;
+    line-height: 50px;
+    border-radius: 5px;
+    background-color: #0995f6;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+  }
+  .logo {
+    width: 60%;
+  }
+  .or {
+    position: relative;
+    color: #8e8e8e;
+  }
+  .or::before {
+    content: "";
+    width: 109px;
+    left: 5px;
+    top: 8px;
+    height: 1px;
+    position: absolute;
+    background-color: #8e8e8e;
+  }
+  .or::after {
+    content: "";
+    width: 109px;
+    left: 145px;
+    top: 8px;
+    height: 1px;
+    position: absolute;
+    background-color: #8e8e8e;
+  }
+  .input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+  }
+  .fblink {
+    color: #385184;
+  }
+  .bottomDiv {
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .bottomDiv a {
+    color: #0995f6;
+    text-decoration: none;
+  }
+  .imglink {
+    width: 100%;
+  
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  .imglink img {
+    margin: 10px;
+  }
+  
+  /* =================================================== login form end Here */
+  
+
+
+                        /* ================== Footer section  */
+
+.all-footer {
+    width: 36%;
+    margin: auto;
+  }
+  .footer-links {
+    margin-left: 14px;
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+  }
+  .footer-links a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px;
+    color: #c7c7c7;
+  }
+  .footer-para {
+    text-align: center;
+    color: #c7c7c7;
+    font-size: 12px;
+  }
+  
+  /*===================== Foooter media query */
+  
+  @media screen and (max-width: 960px) {
+    .footer-links a {
+      font-size: 8px;
+      padding: 3px;
+    }
+    .footer-para {
+      font-size: 8px;
+    }
+  }
+  
+  /* ===================== footer end Here */

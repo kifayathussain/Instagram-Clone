@@ -1,0 +1,567 @@
+                      /* HEADER CSS START HERE  */
+header {
+    background-color: white;
+    border-bottom: solid 1px #bfb5b5c4;
+    height: 52px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    justify-content: center;
+    text-align: center;
+    width: 93%;
+    margin-left: 14px;
+  }
+  header .icon {
+    margin-top: 12px;
+    font-size: 22px;
+    letter-spacing: 20px;
+  }
+  header .icon:hover {
+    cursor: pointer;
+  }
+  section {
+    padding-top: 60px;
+  }
+  header .nav-input {
+    text-align: center;
+    height: 27px;
+    outline: none;
+    border: solid 1px #bfb5b5c4;
+    font-weight: 300;
+    width: 215px;
+    border-radius: 3px;
+    min-width: 125px;
+  }
+  .logo-div img {
+    width: 95px;
+  }
+  .nav-input {
+    margin-top: 11px;
+    background-color: #d4d4d429;
+  }
+  .input-div {
+    position: relative;
+    width: 100%;
+  }
+  .search-icon-div {
+    position: absolute;
+    top: 19px;
+    left: 74px;
+    font-size: 10px;
+    opacity: 0.5;
+  }
+  .profile-img {
+    width: 28px;
+    height: 25px;
+    border-radius: 50%;
+    margin-top: -7px;
+    vertical-align: middle;
+  }
+  /*============= Navbarmedia query */
+
+@media screen and (max-width: 960px) {
+    ul {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .input-div {
+      display: none;
+    }
+    header .icon {
+      font-size: 18px;
+      letter-spacing: 15px;
+    }
+  }
+
+                        /* HEADER CSS CLOSE HERE  */
+
+
+/*============= stories section start here */
+
+.stories {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.name-para {
+  font-size: 12px;
+}
+.stories .story-div {
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.stories .story-div img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: rgb(255, 48, 34) solid 2.9px;
+}
+.new {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  border: #bfb5b5c4 solid 1px;
+  overflow: hidden;
+}
+
+/*========================= Stories media query */
+
+@media screen and (max-width: 960px) {
+  .stories .story-div img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .new {
+    height: 60px;
+  }
+  .name-para {
+    font-size: 8px;
+  }
+}
+
+/* ======================== stories section end here */
+
+
+
+/* =================================================== login form start Here */
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .loginImgDiv {
+    flex-basis: 50%;    
+  }
+  .loginImg {
+    width: 65%;
+    margin-left: auto;
+  }
+  .formDiv {
+    flex-basis: 25%;
+  }
+  @media(max-width:698px){
+    .loginImg {
+      width: 50%;
+      margin:auto;
+    }
+    .formDiv {
+      flex-basis: 80%;
+    }
+  }
+  .uperDiv {
+    
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-left: 30px;
+    border: 1px solid #dbdbdb;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .formContainer .btn {
+    width: 100%;
+    padding: 10px 108px;
+    line-height: 50px;
+    border-radius: 5px;
+    background-color: #0995f6;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+  }
+  .logo {
+    width: 60%;
+  }
+  .or {
+    position: relative;
+    color: #8e8e8e;
+  }
+  .or::before {
+    content: "";
+    width: 109px;
+    left: 5px;
+    top: 8px;
+    height: 1px;
+    position: absolute;
+    background-color: #8e8e8e;
+  }
+  .or::after {
+    content: "";
+    width: 109px;
+    left: 145px;
+    top: 8px;
+    height: 1px;
+    position: absolute;
+    background-color: #8e8e8e;
+  }
+  .input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+  }
+  .fblink {
+    color: #385184;
+  }
+  .bottomDiv {
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .bottomDiv a {
+    color: #0995f6;
+    text-decoration: none;
+  }
+  .imglink {
+    width: 100%;
+  
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  .imglink img {
+    margin: 10px;
+  }
+  
+  /* =================================================== login form end Here */
+
+
+     /* HOME SECTION STARS HERE  */
+.homeContainer{
+    width: 67%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.sidebarContainer{
+  position: fixed;
+  left: 60%;
+}
+
+
+
+     /* HOME SECTION CLOSE HERE  */
+      /* POSTS SECTION STARTS HERE  */
+      .post .post-icon {
+        font-size: 30px;
+        letter-spacing: 15px;
+        margin-top: 8px;
+        margin-left: 15px;
+        position: relative;
+      }
+      
+      .post .post-icon i:hover {
+        cursor: pointer;
+      }
+      .bookmark-div {
+        position: absolute;
+        top: 1px;
+        right: 0px;
+      }
+      
+      .fa-bookmark-o {
+        font-size: 30px;
+      }
+      .post-details {
+        margin-left: 15px;
+      }
+      .posts-like {
+        font-size: 14px;
+      }
+      .post img {
+        width: 100%;
+      }
+      .posts-like a {
+        font-weight: 900;
+      }
+      
+      .post-para {
+        font-size: 10px;
+        opacity: 0.5;
+      }
+      .addComment {
+        width: 99.3%;
+        border: solid 1px #403d3d54;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        outline: none;
+        height: 50px;
+      }
+      
+      .post-input-div {
+        position: relative;
+      }
+      
+      .btn-div {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+      }
+      .btn-div button {
+        border: none;
+        background: none;
+        color: #0268b1;
+        opacity: 0.6;
+        outline: none;
+      }
+      .btn-div button:hover {
+        cursor: pointer;
+      }
+      
+      .post-profile-div {
+        display: flex;
+        height: 50px;
+      }
+      
+      .profile-name {
+        margin: 0;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-top: 12px;
+      }
+      
+      .post-profile-div img {
+        width: 33px;
+        height: 5vh;
+        border-radius: 50%;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        margin-left: 12px;
+        border: solid #bfb5b5c4 3px;
+      }
+      
+      .post {
+        border: solid 1px #403d3d54;
+        margin-bottom: 15px;
+        position: relative;
+      }
+      .profile-address {
+        position: absolute;
+        left: 56px;
+        opacity: 0.7;
+        margin-top: 27px;
+        font-size: 10px;
+      }
+      
+      /*=============================== Home section media query */
+      
+      @media screen and (max-width: 960px) {
+        .post-profile-div {
+          height: 40px;
+        }
+        .post .post-icon i {
+          font-size: 10px;
+          letter-spacing: 5px;
+        }
+        .post .post-icon {
+          margin-left: 5px;
+        }
+        .post-para {
+          font-size: 8px;
+        }
+        .addComment {
+          font-size: 8px;
+          width: 100%;
+          height: 40px;
+        }
+        .post-input-div {
+          position: relative;
+        }
+      
+        .btn-div {
+          position: absolute;
+          top: 12px;
+          right: 5px;
+        }
+        .posts-like {
+          font-size: 9px;
+        }
+        .posts-like a {
+          color: black;
+          font-weight: 600;
+        }
+        .btn-div button {
+          font-size: 10px;
+        }
+        .profile-address {
+          font-size: 8px;
+          margin-top: 22px;
+          position: absolute;
+          left: 49px;
+        }
+        .profile-name {
+          font-size: 10px;
+        }
+        .post-profile-div img {
+          width: 25px;
+          height: 4vh;
+          border-radius: 50%;
+          margin-top: 3px;
+          margin-bottom: 5px;
+          margin-left: 12px;
+          border: solid #bfb5b5c4 3px;
+        }
+        .post-details {
+          margin-left: 5px;
+        }
+      }
+
+      /* POSTS SECTION CLOSE HERE  */
+
+
+/* ================== SideBar Section Start here */
+
+.side-bar-profle {
+  position: relative;
+  display: flex;
+}
+.side-bar-profle img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: 16px;
+  margin-bottom: 5px;
+  margin-left: 14px;
+}
+.side-bar {
+  width: 70%;
+}
+.side-bar-profle h4 {
+  margin-left: 8px;
+}
+.sidebar-full-Name {
+  font-size: 12px;
+  position: absolute;
+  left: 70px;
+  top: 28px;
+  color: #909090;
+}
+.sugg-div {
+  position: relative;
+  display: flex;
+}
+.switch-btn {
+  border: none;
+  background: none;
+  color: #1d9af6;
+  outline: none;
+  position: absolute;
+  right: 14px;
+  top: 24px;
+  font-weight: 600;
+}
+.see-all-btn {
+  border: none;
+  background: none;
+  color: black;
+  outline: none;
+  position: absolute;
+  right: 14px;
+  top: 30px;
+  font-weight: 600;
+}
+.sugg-pra {
+  margin-left: 22px;
+  margin-top: 30px;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+/*============== SideBar media query */
+
+@media screen and (max-width: 960px) {
+  .side-bar-profle img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+  .sugg-pra {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  .see-all-btn {
+    font-size: 9px;
+    position: absolute;
+    right: 0px;
+  }
+  .side-bar-profle h4 {
+    margin-left: 5px;
+    font-size: 9px;
+  }
+  .sidebar-full-Name {
+    font-size: 8px;
+    position: absolute;
+    left: 42px;
+    top: 18px;
+  }
+  .switch-btn {
+    font-size: 8px;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    font-weight: 600;
+  }
+}
+
+/* ================= SideBar section End   */
+
+  
+
+
+                        /* ================== Footer section  */
+
+.all-footer {
+    width: 36%;
+    margin: auto;
+  }
+  .footer-links {
+    margin-left: 14px;
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+  }
+  .footer-links a {
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px;
+    color: #c7c7c7;
+  }
+  .footer-para {
+    text-align: center;
+    color: #c7c7c7;
+    font-size: 12px;
+  }
+  
+  /*===================== Foooter media query */
+  
+  @media screen and (max-width: 960px) {
+    .footer-links a {
+      font-size: 8px;
+      padding: 3px;
+    }
+    .footer-para {
+      font-size: 8px;
+    }
+  }
+  
+  /* ===================== footer end Here */

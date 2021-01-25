@@ -30,7 +30,7 @@ export const Header = () => {
       },
     },
     {
-      link: "/notification",
+      link: "notification",
       props: {
         class: "icon explore-icon fa fa-heart",
       },

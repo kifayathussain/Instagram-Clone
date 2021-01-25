@@ -66,7 +66,7 @@ export const stories = () => {
 
   array.forEach((e) => {
     const storiesImgs = createElement("img", { src: e.imgSrc,
-     }, e.name);
+     });
 
 
     const imageName = createElement('p',{class:"name-para"},e.para)
@@ -86,3 +86,4 @@ export const stories = () => {
   return createElement("div", { class: "stories" }, null1, stry, null2);
 };
   // ============================================= Stories Section End Here ==========================================================
+

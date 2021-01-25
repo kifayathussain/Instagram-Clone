@@ -658,6 +658,35 @@ header {
 
 
 
+
+/* Notification section starts here  */
+
+.notificationContainer {
+  width: 75%;
+  margin: auto;
+}
+.notificationBar {
+  overflow: auto;
+  width: 47%;
+  margin-left: auto;
+  background-color: #ffffff;
+  margin-top: 0px;
+  height: 400px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px 2px #cccc;
+}
+.followBtn {
+  background-color: #0095f6;
+  color: white;
+  padding: 5px 20;
+  border-radius: 6px;
+}
+
+/* Notification section End here  */
+
+
+
 /* ===================================================== profile section */
 
 .links-container {

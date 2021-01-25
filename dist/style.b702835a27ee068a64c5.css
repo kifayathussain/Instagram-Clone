@@ -248,7 +248,7 @@ header {
     width: 67%;
     margin: auto;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 65% 35%;
 }
 .sidebarContainer{
   position: fixed;
@@ -526,6 +526,167 @@ header {
 /* ================= SideBar section End   */
 
 
+
+
+/* =================== Messanger start Here */
+
+.chat {
+  text-align: center;
+}
+.main-messanger {
+  max-width: 65%;
+  height: 85vh;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 40% 60%;
+
+  background-color: lightgray;
+  border: #bfb5b5c4 solid 1px;
+  background-color: white;
+}
+
+.send-msg-div {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.inbox {
+  border-right: #bfb5b5c4 solid 1px;
+  overflow: auto;
+}
+
+.msg-btn {
+  background-color: #0095f6;
+  color: white;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+.msg-para {
+  color: #737171;
+}
+
+.msg-heading {
+  font-size: 22px;
+  line-height: 10px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+.msg-icon-div i {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.msg-icon-div {
+  margin: auto;
+  border: rgb(0, 0, 0) solid 2px;
+  width: 96px;
+  border-radius: 50%;
+  height: 96px;
+}
+
+.inbox .inbox-top {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  height: 60px;
+  border-bottom: #bfb5b5c4 solid 1px;
+  align-items: center;
+}
+
+.inbox .inbox-top .editDiv i {
+  font-size: 22px;
+}
+
+.inbox .inbox-top .inbox-name-div .inbox-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.inbox .inbox-top .inbox-name-div {
+  text-align: center;
+}
+.inbox .inbox-top .inbox-name-div i {
+  margin-left: 5px;
+}
+/*============================================= messanger media query */
+
+@media screen and (max-width: 960px) {
+  .msg-btn {
+    font-weight: 400;
+    padding: 5px 9px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .msg-heading {
+    font-size: 15px;
+    line-height: 5px;
+    margin-top: 10px;
+    font-weight: 200;
+  }
+  .msg-icon-div i {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .msg-icon-div {
+    width: 65px;
+    height: 65px;
+  }
+  .msg-para {
+    font-size: 12px;
+  }
+  .inbox .inbox-top .editDiv i {
+    font-size: 15px;
+  }
+  .inbox .inbox-top .inbox-name-div .inbox-name {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 0px;
+  }
+  .main-messanger {
+    max-width: 90%;
+  }
+}
+/* =================================================== Messanger end Here */
+
+
+
+
+/* Notification section starts here  */
+
+.notificationContainer {
+  width: 75%;
+  margin: auto;
+}
+.notificationBar {
+  overflow: auto;
+  width: 47%;
+  margin-left: auto;
+  background-color: #ffffff;
+  margin-top: 0px;
+  height: 400px;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px 2px #cccc;
+}
+.followBtn {
+  background-color: #0095f6;
+  color: white;
+  padding: 5px 20;
+  border-radius: 6px;
+}
+
+/* Notification section End here  */
+
+
+
 /* ===================================================== profile section */
 
 .links-container {
@@ -646,9 +807,61 @@ header {
   font-size: 8px;
   color: #8e8e8e;
 }
-
+                   /* OVERLAY  */
+}
+.container{
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.1s ease;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.4);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.overlay-icon1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-icon2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
+.image{
+  width: 100%;
+}
+
+@media screen and (max-width: 960px){
+  .overlay-icon2 {
+    font-size: 8px;
+  }
+  .overlay-icon1{
+    font-size: 8px;
+  }
+}
   /* profile section close here  */
 
 

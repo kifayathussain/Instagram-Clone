@@ -5,11 +5,13 @@ import { messenger } from "./messenger";
 import { notification } from "./notification";
 import { login } from "./login";
 import { Ereror } from "./error";
+import { modelBox } from './modelBox'
 
 export const Layout = () => {
   if (location.pathname === "/") {
     return login();
-  } else if (location.pathname === "/home") {
+  }
+   else if (location.pathname === "/home") {
     return home();
   } else if (location.pathname === "/profile") {
     return profile();
@@ -17,9 +19,8 @@ export const Layout = () => {
     return explore();
   } else if (location.pathname === "/messenger") {
     return messenger();
-  } else if (location.pathname === "/notification") {
-    return notification();
-  } else {
+  } 
+  else {
     return Ereror();
   }
 };

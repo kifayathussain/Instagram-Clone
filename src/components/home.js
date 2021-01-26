@@ -3,6 +3,7 @@ import { Header } from "../components/header";
 import { stories } from '../components/stories';
 import { homePosts } from '../components/homeposts';
 import { sideBar } from '../components/sidebar'
+import  { notification } from "./notification"
 
 export const home = () => {
         //   AllPosts Section 
@@ -25,6 +26,6 @@ export const home = () => {
     //      Append All Childs into main Container  
 
     const homeContainer = createElement('div',{class:'homeContainer'},allposts,sidebarContainer);
-    return createElement('section',null,Header(),homeContainer)
+    return createElement('section',null,Header(),homeContainer ,notification());
 
 }

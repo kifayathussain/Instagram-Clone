@@ -1,5 +1,5 @@
 import { createElement } from "../react";
-import { Header } from "../components/header";
+// import { Header } from "../components/header";
 export const notification = () => {
   // Nitification Bar start here
 
@@ -109,5 +109,5 @@ export const notification = () => {
     createElement("div", { class: "side-bar notificationBar" }, loopdiv)
   );
 
-  return createElement("section", null, Header(), notificationContainer);
+  return  notificationContainer;
 };

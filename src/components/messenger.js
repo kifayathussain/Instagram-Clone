@@ -1,6 +1,7 @@
 import { createElement } from "../react/index";
 import { Header } from "../components/header";
 import { footer } from ".//footer";
+import  { notification } from "./notification"
 
 export const messenger = () => {
   // ============================================= Messanger Inbox Section start Here ==========================================================
@@ -156,6 +157,7 @@ export const messenger = () => {
     { class: "chat" },
     Header(),
     mainDiv,
+    notification(),
     footerDiv
   );
 };

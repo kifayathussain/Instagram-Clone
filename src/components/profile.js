@@ -1,6 +1,8 @@
 import { createElement } from "../react";
 import { footer } from "./footer";
 import { Header } from "../components/header";
+import  { notification } from "./notification"
+import { modelBox }from './modelBox'
 
 export const profile = () => {
   const profileSection = createElement(
@@ -129,7 +131,17 @@ export const profile = () => {
     const overlay = createElement("div",{class:"overlay"},overlayIcon1,overlayIcon2)
 
     const img =createElement("img",{src:e.imgsrc,class:"image"})
-    const container = createElement('div',{class:"container"},img,overlay)
+    const container = createElement('div',{class:"container",onclick: (n) => {
+      var i = n.target.parentElement.firstChild.getAttribute("src");
+      var modelBox = document.querySelector(".model-box ");
+      var c = document.querySelector(".model-box .model-img");
+      if (!modelBox.style.display) {
+        modelBox.style.display = "block"
+        c.setAttribute("src", i)
+      } else {
+        modelBox.style.display = ""
+      }
+    }},img,overlay)
 
     b.push(container);
   });
@@ -137,7 +149,7 @@ export const profile = () => {
   const galleryContainer = createElement(
     "div",
     { class: "galleryContainer" },
-    b
+    b,modelBox()
   );
 
   const profileFoter = createElement("div", { class: "all-footer" }, footer());
@@ -147,6 +159,7 @@ export const profile = () => {
     Header(),
     profileSection,
     galleryContainer,
+    notification(),
     profileFoter
   );
 };

@@ -19,8 +19,8 @@ export const stories = () => {
     },
     {
       imgSrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.90.720.720a/s640x640/135327050_146324470622883_7723676209950624770_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=6FG6uJGO-5sAX9_vuFM&tp=1&oh=90e55fc37e802a5063784d26e9776d13&oe=6003EF51",
-
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/137563198_3861949867188643_7169653622087330223_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=H6LD59mwLNQAX9tezLF&tp=1&oh=b8995f4316cc26d9baa47512bf9c973e&oe=602AFB6D",
+       
         para:" tajwar"
 
     },
@@ -40,9 +40,10 @@ export const stories = () => {
     
     },
     {
+     
       imgSrc:
-        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.90.720.720a/s640x640/128437404_150735493451800_3342044046146891773_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=jTOJnYVkEq4AX-U-fKJ&tp=1&oh=4175c47cc07e8b163ded633304366bd1&oe=600388AD",
-
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1079.1079a/s640x640/137563198_3861949867188643_7169653622087330223_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=H6LD59mwLNQAX9tezLF&tp=1&oh=b8995f4316cc26d9baa47512bf9c973e&oe=602AFB6D",
+       
         para:" ayyaz"
 
     },

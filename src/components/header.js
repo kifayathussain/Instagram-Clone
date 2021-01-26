@@ -1,16 +1,19 @@
 import { createElement } from "../react";
 import "../style.css";
-
+import  { notification } from "./notification"
 
 
 
 export const Header = () => {
   let evt = (link) => ({
     onclick: () => {
-      window.location.pathname = link;
+      if(link && link !== '#') {
+        window.location.pathname = link;
+      }
     },
   });
   let navbar = [
+  
     {
       link: "/home",
       props: {
@@ -30,9 +33,18 @@ export const Header = () => {
       },
     },
     {
-      link: "notification",
+      link: '#',
       props: {
         class: "icon explore-icon fa fa-heart",
+        onclick: () => {
+          var aa = document.querySelector(".notificationContainer");
+          console.log(aa);
+          if(!aa.style.display){
+              aa.style.display = "block"
+          }else{
+              aa.style.display = ""
+          }
+      }
       },
     },
     {

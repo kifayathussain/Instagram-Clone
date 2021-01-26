@@ -247,6 +247,7 @@ header {
 .homeContainer{
     width: 67%;
     margin: auto;
+    position: relative;
     display: grid;
     grid-template-columns: 65% 35%;
 }
@@ -663,7 +664,12 @@ header {
 
 .notificationContainer {
   width: 75%;
+  top: 50px;
+  z-index: 1;
+  right: 210px;
+  position: fixed;
   margin: auto;
+  display: none;
 }
 .notificationBar {
   overflow: auto;
@@ -675,12 +681,20 @@ header {
   position: relative;
   border-radius: 3px;
   box-shadow: 0px 1px 5px 2px #cccc;
-}
+}   
 .followBtn {
   background-color: #0095f6;
   color: white;
   padding: 5px 20;
   border-radius: 6px;
+}
+@media screen and (max-width: 960px) {
+  .notificationContainer {
+    right: 40px;
+  }
+  .notificationBar {
+    height: 200px;
+  }
 }
 
 /* Notification section End here  */
@@ -754,6 +768,7 @@ header {
   color: #8e8e8e;
 }
 .galleryContainer {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
@@ -902,3 +917,94 @@ header {
   }
   
   /* ===================== footer end Here */
+
+
+              /* MODEL BOX START HERE  */
+
+              .loop-div {
+                position: relative;
+              margin-left: 30px;
+              margin-top: 10px;
+            }
+            .loop-div img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-top: 8px;
+            }
+            .loop-div h3 {
+              font-size: 15px;
+              margin-left: 15px;
+              position: absolute;
+              top: 0px;
+              left: 40px;
+            }
+            .loop-div h4 {
+              font-size: 12px;
+              position: absolute;
+              top: 14px;
+              left: 56px;
+              color: #909090;
+            }
+            .loop-div .side-bar-btn{
+              border: none;
+              background: none;
+              color: #1D9AF6;
+              outline: none;
+              position: absolute;
+              right: 14px;
+              top: 18px;
+              font-weight: 600;
+            }
+
+              .model-box {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+              }
+              .model-main {
+                display: grid;
+                grid-template-columns: 60% 40%;
+                width: 66%;
+                margin: auto;
+                margin-top: 50px;
+              }
+              .model-img {
+                width: 100%;
+              }
+              .model-box p {
+                color: white;
+                font-size: 50px;
+              }
+              .close-btn {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                margin-right: 20px;
+                background: none;
+                border: none;
+                outline: none;
+              }
+              .model-comment-div {
+                background-color: white;
+              }
+              .heart-btn {
+                color: none;
+                border: none;
+                background: none;
+                outline: none;
+                position: absolute;
+                right: 14px;
+                top: 18px;
+                font-weight: 600;
+              }
+
+
+              /* MODEL BOX START HERE  */

@@ -109,5 +109,5 @@ export const notification = () => {
     createElement("div", { class: "side-bar notificationBar" }, loopdiv)
   );
 
-  return  notificationContainer;
+  return notificationContainer;
 };

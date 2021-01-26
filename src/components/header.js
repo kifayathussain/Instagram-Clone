@@ -1,19 +1,16 @@
 import { createElement } from "../react";
 import "../style.css";
-import  { notification } from "./notification"
-
-
+import { notification } from "./notification";
 
 export const Header = () => {
   let evt = (link) => ({
     onclick: () => {
-      if(link && link !== '#') {
+      if (link && link !== "#") {
         window.location.pathname = link;
       }
     },
   });
   let navbar = [
-  
     {
       link: "/home",
       props: {
@@ -33,24 +30,25 @@ export const Header = () => {
       },
     },
     {
-      link: '#',
+      link: "#",
       props: {
         class: "icon explore-icon fa fa-heart",
         onclick: () => {
           var aa = document.querySelector(".notificationContainer");
           console.log(aa);
-          if(!aa.style.display){
-              aa.style.display = "block"
-          }else{
-              aa.style.display = ""
+          if (!aa.style.display) {
+            aa.style.display = "block";
+          } else {
+            aa.style.display = "";
           }
-      }
+        },
       },
     },
     {
       link: "/profile",
       props: {
-        src:"https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=O0YDkyDqpXkAX_PTbJs&tp=1&oh=f293b6eb1726c4b1f94f9665c46bd150&oe=60340AF0",
+        src:
+          "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=O0YDkyDqpXkAX_PTbJs&tp=1&oh=f293b6eb1726c4b1f94f9665c46bd150&oe=60340AF0",
         class: "profile-img",
       },
     },

@@ -1,7 +1,7 @@
 import { createElement } from "../react/index";
 import { Header } from "../components/header";
 import { footer } from ".//footer";
-import  { notification } from "./notification"
+import { notification } from "./notification";
 
 export const messenger = () => {
   // ============================================= Messanger Inbox Section start Here ==========================================================

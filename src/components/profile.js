@@ -1,8 +1,8 @@
 import { createElement } from "../react";
 import { footer } from "./footer";
 import { Header } from "../components/header";
-import  { notification } from "./notification"
-import { modelBox }from './modelBox'
+import { notification } from "./notification";
+import { modelBox } from "./modelBox";
 
 export const profile = () => {
   const profileSection = createElement(
@@ -17,8 +17,9 @@ export const profile = () => {
         { class: "imgContainer" },
         createElement("img", {
           class: "proimg",
-          src:"https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oSjcleP4koAAX-y2ymU&tp=1&oh=82e831735b98793b25a787c9559649df&oe=60282D70"
-                })
+          src:
+            "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=oSjcleP4koAAX-y2ymU&tp=1&oh=82e831735b98793b25a787c9559649df&oe=60282D70",
+        })
       ),
 
       // discreption Container
@@ -125,23 +126,43 @@ export const profile = () => {
   ];
   let b = [];
   a.forEach((e) => {
+    const overlayIcon1 = createElement(
+      "i",
+      { class: "overlay-icon1 fa fa-heart" },
+      "  685"
+    );
+    const overlayIcon2 = createElement(
+      "i",
+      { class: "overlay-icon2 fa fa-comment" },
+      "  55"
+    );
+    const overlay = createElement(
+      "div",
+      { class: "overlay" },
+      overlayIcon1,
+      overlayIcon2
+    );
 
-    const overlayIcon1 = createElement('i',{class:"overlay-icon1 fa fa-heart"},'  685')
-    const overlayIcon2 = createElement('i',{class:"overlay-icon2 fa fa-comment"},'  55')
-    const overlay = createElement("div",{class:"overlay"},overlayIcon1,overlayIcon2)
-
-    const img =createElement("img",{src:e.imgsrc,class:"image"})
-    const container = createElement('div',{class:"container",onclick: (n) => {
-      var i = n.target.parentElement.firstChild.getAttribute("src");
-      var modelBox = document.querySelector(".model-box ");
-      var c = document.querySelector(".model-box .model-img");
-      if (!modelBox.style.display) {
-        modelBox.style.display = "block"
-        c.setAttribute("src", i)
-      } else {
-        modelBox.style.display = ""
-      }
-    }},img,overlay)
+    const img = createElement("img", { src: e.imgsrc, class: "image" });
+    const container = createElement(
+      "div",
+      {
+        class: "container",
+        onclick: (n) => {
+          var i = n.target.parentElement.firstChild.getAttribute("src");
+          var modelBox = document.querySelector(".model-box ");
+          var c = document.querySelector(".model-box .model-img");
+          if (!modelBox.style.display) {
+            modelBox.style.display = "block";
+            c.setAttribute("src", i);
+          } else {
+            modelBox.style.display = "";
+          }
+        },
+      },
+      img,
+      overlay
+    );
 
     b.push(container);
   });
@@ -149,7 +170,8 @@ export const profile = () => {
   const galleryContainer = createElement(
     "div",
     { class: "galleryContainer" },
-    b,modelBox()
+    b,
+    modelBox()
   );
 
   const profileFoter = createElement("div", { class: "all-footer" }, footer());

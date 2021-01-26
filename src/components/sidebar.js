@@ -1,9 +1,7 @@
 import { createElement } from "../react/index";
-import { footer } from './footer';
+import { footer } from "./footer";
 
-export const sideBar=()=>{
-
-
+export const sideBar = () => {
   //  ==============================================================   SideBar start here ===========================================================================
 
   const a = [
@@ -12,7 +10,7 @@ export const sideBar=()=>{
       para: "Full name",
       UserName: "Kifayat",
       imgsrc:
-      "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/125428017_1707338729441387_8584104875698393892_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=YSDZAbnYJr8AX_WECxE&tp=1&oh=10b9ad77e00f21dbfa8b2ab90d62dbe6&oe=602C8504",
+        "https://instagram.fisb5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/125428017_1707338729441387_8584104875698393892_n.jpg?_nc_ht=instagram.fisb5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=YSDZAbnYJr8AX_WECxE&tp=1&oh=10b9ad77e00f21dbfa8b2ab90d62dbe6&oe=602C8504",
     },
     {
       buttonName: "Follow",
@@ -107,7 +105,8 @@ export const sideBar=()=>{
   );
 
   const sideBarImg = createElement("img", {
-    src:"https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=O0YDkyDqpXkAX_PTbJs&tp=1&oh=f293b6eb1726c4b1f94f9665c46bd150&oe=60340AF0"
+    src:
+      "https://instagram.flhe7-1.fna.fbcdn.net/v/t51.2885-15/e35/134944844_232419798263042_7386018853170716323_n.jpg?_nc_ht=instagram.flhe7-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=O0YDkyDqpXkAX_PTbJs&tp=1&oh=f293b6eb1726c4b1f94f9665c46bd150&oe=60340AF0",
   });
 
   const sideBarProfile = createElement(
@@ -119,7 +118,7 @@ export const sideBar=()=>{
     switchBtn
   );
 
-   const sideBar = createElement(
+  const sideBar = createElement(
     "div",
     { class: "side-bar" },
     sideBarProfile,
@@ -131,4 +130,4 @@ export const sideBar=()=>{
   return sideBar;
 
   // =============================================  SideBar Section End here =================================================================
-}
+};
